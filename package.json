@@ -1,15 +1,19 @@
 {
   "name": "my_app2",
+  "homepage": "https://Hariomprajapati6392.github.io/counter-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
